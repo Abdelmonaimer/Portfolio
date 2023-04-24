@@ -83,4 +83,4 @@ to style the megamenu (navbar)
 has all the certificats and the images i used in the project
 
 ## Credits
-
+This app was created by ERRAJI Abdelmonaim for a school project.
