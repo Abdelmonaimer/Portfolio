@@ -1,25 +1,44 @@
-import logo from './logo.svg';
+
+//theme
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+
+//core
+import "primereact/resources/primereact.min.css";
+
+//icons
+import "primeicons/primeicons.css";
+
+
+
 import './App.css';
 
+import { Navigate, Route, Routes } from 'react-router-dom'
+import Home from "./components/Home";
+import Competences from "./components/Competences";
+
+import FullLayout from "./components/FullLayout";
+import Experiences from "./components/Experiences";
+import Certificats from "./components/Certificats";
+import Projects from "./components/Projects";
+
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<FullLayout />} >
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="formations" element={<Competences />} />
+          <Route path="experiences" element={<Experiences />} />
+          <Route path="certificats" element={<Certificats />} />
+          <Route path="projets" element={<Projects />} />
+
+        </Route>
+      </Routes>
+    </>
   );
-}
+
+};
 
 export default App;

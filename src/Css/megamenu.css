@@ -1,0 +1,30 @@
+
+  
+  .p-megamenu {
+    background-color: #2a4696 !important; 
+    color: #fff !important;
+  }
+  .p-megamenu .p-megamenu-button {
+    color: #fff;
+  }
+  
+   .p-megamenu .p-megamenu-root-list .p-menuitem .p-menuitem-text {
+    color: #fff !important;
+  }
+   .p-megamenu  .p-megamenu-root-list .p-menuitem .p-menuitem-icon {
+    color: #fff !important;
+  }
+
+  .active-mega-menu .p-megamenu {
+    background-color: #2a4696 !important;
+    color: #fff;
+  }
+  .p-menuitem-link {
+    background-color: #2a4696 !important;
+  }
+  .p-menuitem-link:hover{
+    background-color: rgb(121, 121, 121);
+  }
+  
+
+  
